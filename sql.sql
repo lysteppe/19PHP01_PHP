@@ -23,7 +23,7 @@ SELECT * FROM products
 INNER JOIN orderitems ON products.productID = orderitems.productID  
 INNER JOIN orders ON orderitems.orderID =orders.orderID  
 INNER JOIN customers ON orders.customerID = customers.customerID 
-WHERE customers.emailAddress LIKE '%gmail%'
+WHERE customers.emailAddress LIKE '%@gmail%'
 
 5. Lấy ra danh sách sản phẩm có giá lơn hơn 300, đăng năm 2014, giới
 hạn lấy 4 sản phẩm và sắp xếp theo giảm giá giảm dần
