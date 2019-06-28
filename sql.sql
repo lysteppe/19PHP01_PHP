@@ -35,7 +35,7 @@ ORDER BY listPrice DESC LIMIT 4
 6. Lấy ra tên thành phố mà khách hàng đã mua sản phẩm "Yamaha FG700S"
 
 SELECT city, productName FROM addresses
-INNER JOIN customers ON addresses.addressID = customers.shipAddressID  
+INNER JOIN customers ON addresses.customerID = customers.customerID
 INNER JOIN orders ON customers.customerID =orders.customerID  
 INNER JOIN orderitems ON orders.orderID = orderitems.orderID
 INNER JOIN products ON orderitems.productID = products.productID
